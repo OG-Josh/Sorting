@@ -1,0 +1,551 @@
+Script started on Mon 13 May 2019 02:19:55 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwec[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwec $[00m ls -l
+total 20
+-rw-rw-r-- 1 cs1c cs1c     0 May 13 14:19 ec.scr
+-rw-rw-r-- 1 cs1c cs1c 12696 May 13 14:13 hwec.cpp
+-rw-rw-r-- 1 cs1c cs1c   228 May 13 10:11 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwec[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwec $[00m date
+Mon May 13 14:19:59 PDT 2019
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwec[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwec $[00m make all
+g++ -g --std=c++11 hwec.cpp -o hwec
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwec[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwec $[00m ls -l
+total 80
+-rw-rw-r-- 1 cs1c cs1c     0 May 13 14:19 ec.scr
+-rwxrwxr-x 1 cs1c cs1c 59744 May 13 14:20 [0m[01;32mhwec[0m
+-rw-rw-r-- 1 cs1c cs1c 12696 May 13 14:13 hwec.cpp
+-rw-rw-r-- 1 cs1c cs1c   228 May 13 10:11 Makefile
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwec[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwec $[00m ./hwec
+
+==========RUN TIME 1 =======================
+
+========BUBBLE SORT:========
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 430 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 394 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4949
+Total assignment: 2542
+It took me 51610 nanoseconds.
+
+========INSERTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 41024 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 517 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 2542
+It took me 9837 nanoseconds.
+
+========SELECTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15172 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15137 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 18871 nanoseconds.
+
+========QUICK SORT========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 64865 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 52134 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 718
+Total assignment: 386
+It took me 9714 nanoseconds.
+
+========MERGE SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 356
+Total assignment: 672
+It took me 9879 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 356
+Total assignment: 672
+It took me 8382 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 546
+Total assignment: 672
+It took me 13882 nanoseconds.
+
+==========RUN TIME 2 =======================
+
+========BUBBLE SORT:========
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 419 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 365 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4949
+Total assignment: 2542
+It took me 33658 nanoseconds.
+
+========INSERTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 530 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 467 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 2542
+It took me 9650 nanoseconds.
+
+========SELECTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15128 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 99
+It took me 14994 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 18655 nanoseconds.
+
+========QUICK SORT========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 49450 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 52423 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 718
+Total assignment: 386
+It took me 9061 nanoseconds.
+
+========MERGE SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 356
+Total assignment: 672
+It took me 8943 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 356
+Total assignment: 672
+It took me 8309 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 546
+Total assignment: 672
+It took me 12441 nanoseconds.
+
+==========RUN TIME 3 =======================
+
+========BUBBLE SORT:========
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 355 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 374 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4949
+Total assignment: 2542
+It took me 32221 nanoseconds.
+
+========INSERTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 501 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 469 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 2542
+It took me 9631 nanoseconds.
+
+========SELECTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15079 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15029 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 18201 nanoseconds.
+
+========QUICK SORT========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 52386 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 46389 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 718
+Total assignment: 386
+It took me 8323 nanoseconds.
+
+========MERGE SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 356
+Total assignment: 672
+It took me 8407 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 356
+Total assignment: 672
+It took me 8166 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 546
+Total assignment: 672
+It took me 11786 nanoseconds.
+
+==========RUN TIME 4 =======================
+
+========BUBBLE SORT:========
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 418 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 373 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4949
+Total assignment: 2542
+It took me 32277 nanoseconds.
+
+========INSERTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 528 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 478 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 2542
+It took me 9433 nanoseconds.
+
+========SELECTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15060 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 99
+It took me 14979 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 17898 nanoseconds.
+
+========QUICK SORT========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 50889 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 47378 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 718
+Total assignment: 386
+It took me 7558 nanoseconds.
+
+========MERGE SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 356
+Total assignment: 672
+It took me 8661 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 356
+Total assignment: 672
+It took me 8246 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 546
+Total assignment: 672
+It took me 11047 nanoseconds.
+
+==========RUN TIME 5 =======================
+
+========BUBBLE SORT:========
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 389 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 375 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4949
+Total assignment: 2542
+It took me 33014 nanoseconds.
+
+========INSERTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 0
+It took me 518 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 99
+Total assignment: 0
+It took me 475 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 99
+Total assignment: 2542
+It took me 9221 nanoseconds.
+
+========SELECTION SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15076 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 99
+It took me 15055 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 99
+It took me 17838 nanoseconds.
+
+========QUICK SORT========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 52344 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 4950
+Total assignment: 5049
+It took me 47373 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 718
+Total assignment: 386
+It took me 7443 nanoseconds.
+
+========MERGE SORT ========
+
+	List1: 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 356
+Total assignment: 672
+It took me 8690 nanoseconds.
+	List2: 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+0 1 2 3 4 5 6 7 8 9 ...90 91 92 93 94 95 96 97 98 99 
+Total comparisons: 356
+Total assignment: 672
+It took me 21967 nanoseconds.
+	List3: 
+68 37 26 86 4 1 7 85 51 35 ...84 22 92 18 9 61 53 32 2 16 
+1 2 3 4 5 6 7 8 9 10 ...91 92 93 94 95 96 97 98 99 100 
+Total comparisons: 546
+Total assignment: 672
+It took me 10694 nanoseconds.
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hwec[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hwec $[00m exit
+exit
+
+Script done on Mon 13 May 2019 02:20:11 PM PDT
